@@ -29,7 +29,6 @@
 				display: flex;
 				justify-content: center;
 				margin-bottom:  20px;
-				padding: 0 20px;
 				width: 100%;
 			}
 			@media (min-width:  600px) {
@@ -71,7 +70,7 @@
 							@@include("blocks/buttons/button.html",
 								{
 									"Text": "Данные неактуальны?",
-									"Modifier": "button--filled", 
+									"Modifier": "button--primary", 
 									"Mix-Class": "",
 									"Attributes": ""
 								})
@@ -80,7 +79,7 @@
 							@@include("blocks/buttons/button.html",
 							{
 							"Text": "Отправить",
-							"Modifier": "button--filled button--rect",
+							"Modifier": "button--primary button--rect",
 							"Mix-Class": "",
 							"Attributes": ""
 							})
@@ -89,27 +88,25 @@
 							@@include("blocks/buttons/button.html",
 								{
 									"Text": "Отправить",
-									"Modifier": "button--filled button--small",
+									"Modifier": "button--primary button--small",
 									"Mix-Class": "",
 									"Attributes": ""
 								})
 						</div>
-						
 						<div class="page__item">
 							@@include("blocks/buttons/button.html",
 							{
 							"Text": "Отправить",
-							"Modifier": "button--filled button--big",
+							"Modifier": "button--primary button--big",
 							"Mix-Class": "",
 							"Attributes": ""
 							})
 						</div>
-						
 						<div class="page__item">
 							@@include("blocks/buttons/button.html",
 							{
 							"Text": "Отправить",
-							"Modifier": "button--filled button--small",
+							"Modifier": "button--primary button--small",
 							"Mix-Class": "",
 							"Attributes": "disabled"
 							})
@@ -118,7 +115,7 @@
 							@@include("blocks/buttons/button.html",
 							{
 							"Text": "Отправить",
-							"Modifier": "button--filled button--big",
+							"Modifier": "button--primary button--big",
 							"Mix-Class": "",
 							"Attributes": "disabled"
 							})
@@ -150,10 +147,59 @@
 							"Attributes": ""
 							})
 						</div>
-						<div class="page__item"></div>
-						<div class="page__item"></div>
-						<div class="page__item"></div>
-						<div class="page__item"></div>
+
+						<!-- links -->
+						<div class="page__item">
+							<a class="link link--author" href="#">Татьяна Лобач</a>
+						</div>
+						<div class="page__item">
+							<a class="link link--product" href="#">Желудки куриные очищенные 60 руб.</a>
+						</div>
+						<div class="page__item">
+							<a class="link link--maker" href="#">ТМ Аль Сафа (Приосколье)</a>
+						</div>
+						<div class="page__item">
+							<a class="link link--prices" href="#">
+								<span>Смотреть все цены</span>
+								<svg class="link__svg link__svg--prices">
+										<use xlink:href="images/icons/links/links_sprite.svg#arrow_expand"></use>
+								</svg>
+							</a>
+						</div>
+
+						<div class="page__item">
+							<a class="link link--comment" href="#">
+								<span>Оставить отзыв</span>
+								<svg class="link__svg">
+									<use xlink:href="images/icons/links/links_sprite.svg#comment"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="page__item">
+							<a class="link link--edit" href="#">
+								<span>Редактировать компанию</span>
+								<svg class="link__svg">
+									<use xlink:href="images/icons/links/links_sprite.svg#edit"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="page__item">
+							<a class="link link--statisctic" href="#">
+								<span>Статистика</span>
+								<svg class="link__svg">
+									<use xlink:href="images/icons/links/links_sprite.svg#statisctic"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="page__item">
+							<a class="link link--reply" href="#">
+								<span>Ответить</span>
+								<svg class="link__svg">
+									<use xlink:href="images/icons/links/links_sprite.svg#reply"></use>
+								</svg>
+							</a>
+						</div>
+
 						<div class="page__item"></div>
 						<div class="page__item"></div>
 

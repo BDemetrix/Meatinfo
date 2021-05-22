@@ -1,4 +1,4 @@
-$minWidth: 320px;
+$minWidth: 300px;
 $maxWidth: 1920;
 $maxWidthContainer: 1170;
 $md1: $maxWidthContainer;
@@ -7,10 +7,12 @@ $md3: 767.98;
 $md4: 567.98;
 $md5: 479.98;
 
+$primary-color: #005FAE; 
+$secondary-color: #999999;
 $button-simple-bg: #00C346;;
-$button-filled-bg:#005FAE;
+$button-primary-bg: $primary-color; 
 $button-sell-bg: #EE6C4D;
-$button-disabled-bg: #999999;
+$button-disabled-bg: $secondary-color;
 $button-disabled-bg: rgba(0, 0, 0, 0.12);
 $button-disabled-color: rgba(0, 0, 0, 0.26);
 

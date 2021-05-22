@@ -1,0 +1,74 @@
+.link {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  position: relative;
+
+  &--author,
+  &--product {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  &--author,
+  &--product,
+  &--maker,
+  &--prices {
+    color: $primary-color;
+    
+    &:hover,
+    &:active {
+      color: $primary-color;
+      text-decoration: underline;
+    }
+  }
+  &--author {
+  }
+  &--product {
+  }
+  &--maker {
+  }
+  &--prices {
+    padding-right: 20px;
+    height: 20px;
+  }
+
+  &--comment,
+  &--edit,
+  &--statisctic,
+  &--reply {
+    padding-left: 24px;
+    color: $secondary-color;
+
+    &:hover,
+    &:active {
+      color: $secondary-color;
+      text-decoration: underline;
+    }
+  }
+  &--comment {
+  }
+  &--edit {
+  }
+  &--statisctic {
+  }
+  &--reply {
+  }
+  // .link__svg 
+  &__svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    fill: $secondary-color;
+
+    &--prices {
+      fill: $primary-color;
+      left: auto;
+      right: 0;
+    }
+  }
+
+}
