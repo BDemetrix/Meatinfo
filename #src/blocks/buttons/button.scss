@@ -1,0 +1,141 @@
+@import '../../scss/constants';
+
+.button {
+  position: relative;
+  max-width: 300px;
+  min-width: 135px;
+  padding: 10px;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: all $t/2 ease;
+
+  // .button--employee
+  &--employee {
+    display: inline-block;
+    width: 238px;
+    background: #fff;
+    border: 1px solid $button-simple-bg;
+    color: $button-simple-bg;
+  
+    &:hover,
+    &:disabled {
+      background: $button-simple-bg;
+      color: #fff;
+    }
+    &:active {
+      &::after {
+        background: $overlay-pressed-bg;
+      }
+    }
+    &:disabled {
+      cursor: default;
+    }
+  }
+  // .button--filled
+  &--filled {
+    width: 199px;
+    color: #fff;
+    background: $button-filled-bg;
+    box-shadow: $box-shadow;
+    &:hover {
+      &::after {
+        background: $overlay-hover-bg;
+      }
+    }
+    &:active {
+      &::after {
+        background: $overlay-pressed-bg;
+      }
+    }
+    &:disabled {
+      background: $button-disabled-bg;
+      color: $button-disabled-color;
+      cursor: default;
+    }
+  }
+  // .button--small
+  &--small {
+    width: 135px;
+  }
+  // .button--big
+  &--big {
+    width: 100%;
+    padding: 14px;
+  }
+  &--buy,
+  &--sell {
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    color: #fff;
+    min-width: 0;
+    width: 60px;
+    height: 24px;
+    font-size: 11px;
+    line-height: 16px;
+
+    &:hover {
+      &::after {
+        background: $overlay-hover-bg;
+      }
+    }
+    &:active {
+      &::after {
+        background: $overlay-pressed-bg;
+      }
+    }
+  }
+  // .button--sell
+  &--sell {
+    background: $button-sell-bg;
+  }
+  // .button--buy
+  &--buy {
+    background: $button-filled-bg;
+  }
+  // .button--cancel
+  &--cancel {
+    padding: 0;
+    color: $button-filled-bg;
+    min-width: 0;
+    background: transparent;
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+    &:disabled {
+      opacity: 0;
+      visibility: hidden;
+    }
+    &::after {
+      display: none;
+    }
+  }
+  // .button--rect
+  &--rect {
+    border-radius: 0;
+    width: 142px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: transparent;
+  }
+	// .button__text
+	&__text {
+
+	}
+  
+}
