@@ -55,6 +55,7 @@
     &:disabled {
       background: $button-disabled-bg;
       color: $button-disabled-color;
+      box-shadow: none;
       cursor: default;
     }
   }
