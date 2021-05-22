@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Meatinfo UI</title>
+		<meta charset="UTF-8">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="css/style.min.css">
+		<link rel="shortcut icon" href="favicon.ico">
+		<!-- <meta name="robots" content="noindex, nofollow"> -->
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<style>
+			.page {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				padding-top: 30px;
+				margin: 0 -20px;
+			}
+			.page__column {
+				width: 100%;
+				padding: 0 20px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.page__item {
+				display: flex;
+				justify-content: center;
+				margin-bottom:  20px;
+				padding: 0 20px;
+				width: 100%;
+			}
+			@media (min-width:  600px) {
+				.page__column {
+					width: 50%;
+				}
+			}
+			@media (min-width:  900px) {
+				.page__column {
+					width: 33.33%;
+				}
+			}				
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			@@include('_header.html',{})
+			<main class="page">
+				<div class="page__column">
+						<div class="page__item">
+							@@include("blocks/buttons/button.html",
+								{
+									"Text": "Работаете в этой компании?",
+									"Modifier": "button--employee", 
+									"Mix-Class": "",
+									"Attributes": " data-text=\"Отменить запрос в сотрудники\" data-sent=\"false\" "
+								})
+						</div>
+						<div class="page__item">
+							@@include("blocks/buttons/button.html",
+							{
+							"Text": "Я работаю в этой компании",
+							"Modifier": "button--employee",
+							"Mix-Class": "",
+							"Attributes": "disabled"
+							})
+						</div>
+						<div class="page__item">
+							@@include("blocks/buttons/button.html",
+								{
+									"Text": "Данные неактуальны?",
+									"Modifier": "button--filled", 
+									"Mix-Class": "",
+									"Attributes": ""
+								})
+						</div>
+						<div class="page__item">
+							@@include("blocks/buttons/button.html",
+							{
+							"Text": "Отправить",
+							"Modifier": "button--filled button--rect",
+							"Mix-Class": "",
+							"Attributes": ""
+							})
+						</div>
+						<div class="page__item">
+							@@include("blocks/buttons/button.html",
+								{
+									"Text": "Отправить",
+									"Modifier": "button--filled button--small",
+									"Mix-Class": "",
+									"Attributes": ""
+								})
+						</div>
+						
+						<div class="page__item">
+							@@include("blocks/buttons/button.html",
+							{
+							"Text": "Отправить",
+							"Modifier": "button--filled button--big",
+							"Mix-Class": "",
+							"Attributes": ""
+							})
+						</div>
+						
+						<div class="page__item">
+							@@include("blocks/buttons/button.html",
+							{
+							"Text": "Отправить",
+							"Modifier": "button--filled button--small",
+							"Mix-Class": "",
+							"Attributes": "disabled"
+							})
+						</div>
+						<div class="page__item">
+							@@include("blocks/buttons/button.html",
+							{
+							"Text": "Отправить",
+							"Modifier": "button--filled button--big",
+							"Mix-Class": "",
+							"Attributes": "disabled"
+							})
+						</div>
+						<div class="page__item">
+							@@include("blocks/buttons/button.html",
+							{
+							"Text": "Отмена",
+							"Modifier": "button--cancel",
+							"Mix-Class": "",
+							"Attributes": ""
+							})
+						</div>
+						<div class="page__item">
+							@@include("blocks/buttons/button.html",
+							{
+							"Text": "Продам",
+							"Modifier": "button--sell",
+							"Mix-Class": "",
+							"Attributes": ""
+							})
+						</div>
+						<div class="page__item">
+							@@include("blocks/buttons/button.html",
+							{
+							"Text": "Куплю",
+							"Modifier": "button--buy",
+							"Mix-Class": "",
+							"Attributes": ""
+							})
+						</div>
+						<div class="page__item"></div>
+						<div class="page__item"></div>
+						<div class="page__item"></div>
+						<div class="page__item"></div>
+						<div class="page__item"></div>
+						<div class="page__item"></div>
+
+				</div>
+				
+				<div class="page__column"></div>
+				<div class="page__column"></div>
+				<div class="page__column"></div>
+				<div class="page__column"></div>
+				<div class="page__column"></div>
+				<div class="page__column"></div>
+				<div class="page__column"></div>
+				<div class="page__column"></div>
+				<div class="page__column"></div>
+			</main>
+			@@include('_footer.html',{})
+		</div>
+		@@include('_popup.html',{})
+		@@include('_js.html',{})
+	</body>
+</html>
