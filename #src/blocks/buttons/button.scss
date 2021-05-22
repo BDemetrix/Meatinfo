@@ -36,11 +36,11 @@
       cursor: default;
     }
   }
-  // .button--filled
-  &--filled {
+  // .button--primary
+  &--primary {
     width: 199px;
     color: #fff;
-    background: $button-filled-bg;
+    background: $button-primary-bg;
     box-shadow: $box-shadow;
     &:hover {
       &::after {
@@ -99,12 +99,12 @@
   }
   // .button--buy
   &--buy {
-    background: $button-filled-bg;
+    background: $button-primary-bg;
   }
   // .button--cancel
   &--cancel {
     padding: 0;
-    color: $button-filled-bg;
+    color: $button-primary-bg;
     min-width: 0;
     background: transparent;
 
