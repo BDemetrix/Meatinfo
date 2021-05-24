@@ -1,4 +1,18 @@
 //====================================================================================================
+.header {
+
+	// .header__content-top
+	&__content-top {
+		background: $primary-color;
+		height: 44px;
+	}
+	// .header__content-bottom
+	&__content-bottom {
+		background: #F7F7F7;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+		height: 44px;
+	}
+}
 
 //====================================================================================================
 

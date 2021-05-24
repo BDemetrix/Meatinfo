@@ -14,7 +14,8 @@
   &--author,
   &--product,
   &--maker,
-  &--prices {
+  &--prices,
+  &--back {
     
     &:hover,
     &:active {
@@ -32,7 +33,11 @@
     padding-right: 20px;
     height: 20px;
   }
+  &--back {
+    padding-left: 24px;
+  }
 
+  &--view,
   &--comment,
   &--edit,
   &--statisctic,
@@ -68,6 +73,9 @@
       fill: $primary-color;
       left: auto;
       right: 0;
+    }
+    &--back {
+      fill: $primary-color;
     }
   }
 

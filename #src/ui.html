@@ -55,7 +55,6 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			@@include('_header.html',{})
 			<main class="page">
 				<div class="page__inner">
 
@@ -189,6 +188,14 @@
 							</svg>
 						</a>
 					</div>
+					<div class="page__item">
+						<a class="link link--back" href="#">
+							<svg class="link__svg link__svg--back">
+								<use xlink:href="images/icons/links/links_sprite.svg#back"></use>
+							</svg>
+							<span>К каталогу компаний</span>
+						</a>
+					</div>
 					
 					<div class="page__item">
 						<a class="link link--comment" href="#">
@@ -222,6 +229,14 @@
 							</svg>
 						</a>
 					</div>
+					<div class="page__item">
+						<a class="link link--view" href="#">
+							<span>578 (+2)</span>
+							<svg class="link__svg">
+								<use xlink:href="images/icons/links/links_sprite.svg#view"></use>
+							</svg>
+						</a>
+					</div>
 					
 					<!-- rating -->
 					<div class="page__item">
@@ -243,7 +258,6 @@
 				@@include('blocks/feedback/feedback.html',{})
 
 			</main>
-			@@include('_footer.html',{})
 		</div>
 		@@include('_popup.html',{})
 		@@include('_js.html',{})

@@ -6,12 +6,62 @@
 	<body>
 		<div class="wrapper">
 			@@include('_header.html',{})
-			<main class="page">
+			<main class="page _container">
+				<div class="page__inner">
+					<article class="page__content">
+					<div class="page__header ">
+						<nav class="page__breadcrumbs breadcrumbs">
+							<ul class="breadcrumbs__list">
+								<li><a href="index.html" class="breadcrumbs__link">Главная</a></li>
+								<li><a href="index.html" class="breadcrumbs__link">Мясные компании в Москве</a></li>
+								<li><span class="breadcrumbs__item">Преображенский МПК, ООО</span></li>
+							</ul>
+						</nav>
 
+						<form action="#" class="page__search">
+							<div class="page__search-input">
+								<input type="text" autocomplete="off" placeholder="Поиск по компаниям" name="">
+							</div>
+							<button class="page__search-btn" type="submit"></button>
+						</form>
+
+						<a class="page__to-catalog link link--back" href="#">
+							<svg class="link__svg link__svg--back">
+								<use xlink:href="images/icons/links/links_sprite.svg#back"></use>
+							</svg>
+							<span>К каталогу компаний</span>
+						</a>
+
+						<h1 class="page__maker page__maker--confirmed">Преображенский МПК, ООО</h1>
+						<div class="page__header-links">
+							<a class="page__header-link link link--comment" href="#">
+								<span>Оставить отзыв</span>
+								<svg class="link__svg">
+									<use xlink:href="images/icons/links/links_sprite.svg#comment"></use>
+								</svg>
+							</a>
+							<a class="page__header-link link link--view" href="#">
+								<span>578 (+2)</span>
+								<svg class="link__svg">
+									<use xlink:href="images/icons/links/links_sprite.svg#view"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+					</article>
+					<aside class="page__aside">
+					<div class="page__aside-item">
+						<img src="images/aside/ad.jpg" alt="">
+					</div>
+					<div class="page__aside-item">
+						<img src="images/aside/ad.jpg" alt="">
+					</div>
+					</aside>
+				</div>
 			</main>
 			@@include('_footer.html',{})
 		</div>
-		@@include('_popup.html',{})
+		<!-- @@include('_popup.html',{}) -->
 		@@include('_js.html',{})
 	</body>
 </html>
