@@ -125,6 +125,20 @@
     border-radius: 0;
     width: 142px;
   }
+  &--up {
+    max-width: none;
+    min-width: 0px;
+    position: fixed;
+    z-index: 10;
+    bottom: 24px;
+    right: 24px;
+    flex: 0 0 56px;
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    box-shadow: $box-shadow;
+    background: $primary-color url('../images/icons/button/arrow.svg') center no-repeat;
+  }
   &::after {
     content: "";
     position: absolute;
@@ -134,9 +148,5 @@
     left: 0;
     background: transparent;
   }
-	// .button__text
-	&__text {
 
-	}
-  
 }

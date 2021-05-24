@@ -11,8 +11,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 		<style>
+			body {
+				position: relative;
+				padding-bottom: 70px;
+			}
 			.page {
-				
+				padding: 20px;
 			}
 			.page__inner {
 				display: flex;
@@ -34,12 +38,12 @@
 				margin-bottom:  20px;
 				width: 100%;
 			}
-			@media (min-width:  600px) {
+			@media (min-width:  640px) {
 				.page__column {
 					width: 50%;
 				}
 			}
-			@media (min-width:  900px) {
+			@media (min-width:  940px) {
 				.page__column {
 					width: 33.33%;
 				}
@@ -56,7 +60,7 @@
 				<div class="page__inner">
 
 					<div class="page__column">
-					<div class="page__item">
+						<div class="page__item">
 							@@include("blocks/buttons/button.html",
 								{
 									"Text": "Работаете в этой компании?",
@@ -64,8 +68,8 @@
 									"Mix-Class": "",
 									"Attributes": " data-text=\"Отменить запрос в сотрудники\" data-sent=\"false\" "
 								})
-					</div>
-					<div class="page__item">
+						</div>
+						<div class="page__item">
 							@@include("blocks/buttons/button.html",
 							{
 							"Text": "Я работаю в этой компании",
@@ -73,8 +77,8 @@
 							"Mix-Class": "",
 							"Attributes": "disabled"
 							})
-					</div>
-					<div class="page__item">
+						</div>
+						<div class="page__item">
 							@@include("blocks/buttons/button.html",
 								{
 									"Text": "Данные неактуальны?",
@@ -82,8 +86,8 @@
 									"Mix-Class": "",
 									"Attributes": ""
 								})
-					</div>
-					<div class="page__item">
+						</div>
+						<div class="page__item">
 							@@include("blocks/buttons/button.html",
 							{
 							"Text": "Отправить",
@@ -91,8 +95,8 @@
 							"Mix-Class": "",
 							"Attributes": ""
 							})
-					</div>
-					<div class="page__item">
+						</div>
+						<div class="page__item">
 							@@include("blocks/buttons/button.html",
 								{
 									"Text": "Отправить",
@@ -100,8 +104,8 @@
 									"Mix-Class": "",
 									"Attributes": ""
 								})
-					</div>
-					<div class="page__item">
+						</div>
+						<div class="page__item">
 							@@include("blocks/buttons/button.html",
 							{
 							"Text": "Отправить",
@@ -109,8 +113,8 @@
 							"Mix-Class": "",
 							"Attributes": ""
 							})
-					</div>
-					<div class="page__item">
+						</div>
+						<div class="page__item">
 							@@include("blocks/buttons/button.html",
 							{
 							"Text": "Отправить",
@@ -118,8 +122,8 @@
 							"Mix-Class": "",
 							"Attributes": "disabled"
 							})
-					</div>
-					<div class="page__item">
+						</div>
+						<div class="page__item">
 							@@include("blocks/buttons/button.html",
 							{
 							"Text": "Отправить",
@@ -127,8 +131,8 @@
 							"Mix-Class": "",
 							"Attributes": "disabled"
 							})
-					</div>
-					<div class="page__item">
+						</div>
+						<div class="page__item">
 							@@include("blocks/buttons/button.html",
 							{
 							"Text": "Отмена",
@@ -136,8 +140,8 @@
 							"Mix-Class": "",
 							"Attributes": ""
 							})
-					</div>
-					<div class="page__item">
+						</div>
+						<div class="page__item">
 							@@include("blocks/buttons/button.html",
 							{
 							"Text": "Продам",
@@ -145,8 +149,8 @@
 							"Mix-Class": "",
 							"Attributes": ""
 							})
-					</div>
-					<div class="page__item">
+						</div>
+						<div class="page__item">
 							@@include("blocks/buttons/button.html",
 							{
 							"Text": "Куплю",
@@ -154,7 +158,16 @@
 							"Mix-Class": "",
 							"Attributes": ""
 							})
-					</div>
+						</div>
+						<div class="page__item">
+							@@include("blocks/buttons/button.html",
+							{
+							"Text": "",
+							"Modifier": "button--up",
+							"Mix-Class": "",
+							"Attributes": ""
+							})
+						</div>
 					</div>
 
 					<div class="page__column">
@@ -226,14 +239,6 @@
 					</div>
 
 					<div class="page__column"></div>
-					<div class="page__column"></div>
-					<div class="page__column"></div>
-					<div class="page__column"></div>
-					<div class="page__column"></div>
-					<div class="page__column"></div>
-					<div class="page__column"></div>
-					<div class="page__column"></div>
-
 				</div>
 				@@include('blocks/feedback/feedback.html',{})
 
