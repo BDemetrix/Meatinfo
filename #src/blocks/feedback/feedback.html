@@ -1,0 +1,82 @@
+<div class="feedback">
+  <a href="#" class="feedback__rules">Правила публикации отзывов</a>
+  <form class="feedback__content">
+    <div class="feedback__header">
+      <div class="feedback__title">Оставить отзыв</div>
+      <div class="feedback__info">
+        <div class="feedback__avatar">
+          <img class="feedback__photo" src="images/icons/feedback/photo.jpg" alt="">
+        </div>
+        <div class="feedback__info-box">
+          <div class="feedback__user-name">
+            <a href="#" class="feedback__user-name-link">Виталий Пчелинцев</a>
+          </div>
+          <div class="feedback__rating">
+            @@include('../rating/rating.html', {
+            "ID":"feedback",
+            "Name":"rating-feedback",
+            "Checked-1":"",
+            "Checked-2":"",
+            "Checked-3":"",
+            "Checked-4":"checked",
+            "Checked-5":""
+            })
+            <div class="feedback__note">Начните отзыв с выставления оценки</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="feedback__body">
+      <div class="feedback__area">
+        <textarea class="feedback__textarea"  name="" id="" form="" placeholder="Сотрудничали с компанией? Расскажите как это было!"></textarea>
+      </div>
+      <div class="feedback__errors feedback__errors--mob">
+        <p class="feedback__error">Для оставления отзывов со дня регистрации на портале должно пройти не менее 30 дней</p>
+        <p class="feedback__error"></p>
+      </div>
+      <div class="feedback__controls">
+        <div class="feedback__files"> 
+          <div class="feedback__preview">
+            <div class="feedback__preview-item">
+              <img src="images/icons/feedback/prev.jpg" alt="" class="feedback__preview-img">
+              <svg class="feedback__preview-btn">
+                <use xlink:href="images/icons/feedback/feedback_sprite.svg#close_prev"></use>
+              </svg>
+            </div>
+            <div class="feedback__preview-item">
+              <img src="images/icons/feedback/prev.jpg" alt="" class="feedback__preview-img">
+              <svg class="feedback__preview-btn">
+                <use xlink:href="images/icons/feedback/feedback_sprite.svg#close_prev"></use>
+              </svg>
+            </div>
+            <div class="feedback__preview-item">
+              <img src="images/icons/feedback/prev.jpg" alt="" class="feedback__preview-img">
+              <svg class="feedback__preview-btn">
+                <use xlink:href="images/icons/feedback/feedback_sprite.svg#close_prev"></use>
+              </svg>
+            </div>
+          </div>
+          <label class="feedback__files-field">
+            <div class="feedback__files-btn">
+              <spun class="feedback__files-title">Прикрепить фото</spun>
+              <svg class="feedback__files-icon" title="Прикрепить фото">
+                  <use xlink:href="images/icons/feedback/feedback_sprite.svg#add_photo"></use>
+              </svg>
+            </div>
+            <input type="file" autocomplete="off"class="feedback__files-input" name="" form="">
+          </label>
+        </div>
+        <button class="feedback__send button button--primary">Отправить</button>
+      </div>
+    </div>
+  </form>
+  <button class="feedback__close-btn">
+    <svg class="feedback__close-btn-icon">
+        <use xlink:href="images/icons/feedback/feedback_sprite.svg#close"></use>
+    </svg>
+  </button>
+  <div class="feedback__errors feedback__errors--pc">
+    <p class="feedback__error">Для оставления отзывов со дня регистрации на портале должно пройти не менее 30 дней</p>
+    <p class="feedback__error"></p>
+  </div>
+</div>
