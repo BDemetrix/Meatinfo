@@ -38,18 +38,13 @@
 				margin-bottom:  20px;
 				width: 100%;
 			}
+			.feedback {
+				margin: 20px auto;
+			}
 			@media (min-width:  640px) {
 				.page__column {
 					width: 50%;
 				}
-			}
-			@media (min-width:  940px) {
-				.page__column {
-					width: 33.33%;
-				}
-			}				
-			.feedback {
-				margin: 20px;
 			}
 		</style>
 	</head>
@@ -171,95 +166,104 @@
 
 					<div class="page__column">
 					<!-- links -->
-					<div class="page__item">
-						<a class="link link--author" href="#">Татьяна Лобач</a>
-					</div>
-					<div class="page__item">
-						<a class="link link--product" href="#">Желудки куриные очищенные 60 руб.</a>
-					</div>
-					<div class="page__item">
-						<a class="link link--maker" href="#">ТМ Аль Сафа (Приосколье)</a>
-					</div>
-					<div class="page__item">
-						<a class="link link--prices" href="#">
-							<span>Смотреть все цены</span>
-							<svg class="link__svg link__svg--prices">
-								<use xlink:href="images/icons/links/links_sprite.svg#arrow_expand"></use>
-							</svg>
-						</a>
-					</div>
-					<div class="page__item">
-						<a class="link link--back" href="#">
-							<svg class="link__svg link__svg--back">
-								<use xlink:href="images/icons/links/links_sprite.svg#back"></use>
-							</svg>
-							<span>К каталогу компаний</span>
-						</a>
-					</div>
-					
-					<div class="page__item">
-						<a class="link link--comment" href="#">
-							<span>Оставить отзыв</span>
-							<svg class="link__svg">
-								<use xlink:href="images/icons/links/links_sprite.svg#comment"></use>
-							</svg>
-						</a>
-					</div>
-					<div class="page__item">
-						<a class="link link--edit" href="#">
-							<span>Редактировать компанию</span>
-							<svg class="link__svg">
-								<use xlink:href="images/icons/links/links_sprite.svg#edit"></use>
-							</svg>
-						</a>
-					</div>
-					<div class="page__item">
-						<a class="link link--statisctic" href="#">
-							<span>Статистика</span>
-							<svg class="link__svg">
-								<use xlink:href="images/icons/links/links_sprite.svg#statisctic"></use>
-							</svg>
-						</a>
-					</div>
-					<div class="page__item">
-						<a class="link link--reply" href="#">
-							<span>Ответить</span>
-							<svg class="link__svg">
-								<use xlink:href="images/icons/links/links_sprite.svg#reply"></use>
-							</svg>
-						</a>
-					</div>
-					<div class="page__item">
-						<a class="link link--view" href="#">
-							<span>578 (+2)</span>
-							<svg class="link__svg">
-								<use xlink:href="images/icons/links/links_sprite.svg#view"></use>
-							</svg>
-						</a>
-					</div>
-					
-					<!-- rating -->
-					<div class="page__item">
-						@@include('blocks/rating/rating.html', {
-						"ID":"rating-1",
-						"Name":"rating-1",
-						"Checked-1":"",
-						"Checked-2":"",
-						"Checked-3":"",
-						"Checked-4":"checked",
-						"Checked-5":""
-						})
-					</div>
+						<div class="page__item">
+							<a class="link link--author" href="#">Татьяна Лобач</a>
+						</div>
+						<div class="page__item">
+							<a class="link link--product" href="#">Желудки куриные очищенные 60 руб.</a>
+						</div>
+						<div class="page__item">
+							<a class="link link--maker" href="#">ТМ Аль Сафа (Приосколье)</a>
+						</div>
+						<div class="page__item">
+							<a class="link link--prices" href="#">
+								<span>Смотреть все цены</span>
+								<svg class="link__svg link__svg--prices">
+									<use xlink:href="images/icons/links/links_sprite.svg#arrow_expand"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="page__item">
+							<a class="link link--back" href="#">
+								<svg class="link__svg link__svg--back">
+									<use xlink:href="images/icons/links/links_sprite.svg#back"></use>
+								</svg>
+								<span>К каталогу компаний</span>
+							</a>
+						</div>
+
+						<div class="page__item">
+							<a class="link link--comment" href="#">
+								<span>Оставить отзыв</span>
+								<svg class="link__svg">
+									<use xlink:href="images/icons/links/links_sprite.svg#comment"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="page__item">
+							<a class="link link--edit" href="#">
+								<span>Редактировать компанию</span>
+								<svg class="link__svg">
+									<use xlink:href="images/icons/links/links_sprite.svg#edit"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="page__item">
+							<a class="link link--statisctic" href="#">
+								<span>Статистика</span>
+								<svg class="link__svg">
+									<use xlink:href="images/icons/links/links_sprite.svg#statisctic"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="page__item">
+							<a class="link link--reply" href="#">
+								<span>Ответить</span>
+								<svg class="link__svg">
+									<use xlink:href="images/icons/links/links_sprite.svg#reply"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="page__item">
+							<a class="link link--view" href="#">
+								<span>578 (+2)</span>
+								<svg class="link__svg">
+									<use xlink:href="images/icons/links/links_sprite.svg#view"></use>
+								</svg>
+							</a>
+						</div>
+
+						<!-- rating -->
+						<div class="page__item">
+							@@include('blocks/rating/rating.html', {
+							"ID":"rating-1",
+							"Name":"rating-1",
+							"Checked-1":"",
+							"Checked-2":"",
+							"Checked-3":"",
+							"Checked-4":"checked",
+							"Checked-5":""
+							})
+						</div>
+
+						<div class="page__item">
+							<div class="confirmed-msg">
+								<div class="confirmed-msg__title">
+									Подтверждённая компания
+								</div>
+								<div class="confirmed-msg__text">
+									Реквизиты компании проверены банковским переводом.
+								</div>
+							</div>
+						</div>
 
 					</div>
 
-					<div class="page__column"></div>
 				</div>
 				@@include('blocks/feedback/feedback.html',{})
 
 			</main>
 		</div>
-		@@include('_popup.html',{})
 		@@include('_js.html',{})
 	</body>
 </html>

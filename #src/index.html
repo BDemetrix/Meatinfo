@@ -9,31 +9,34 @@
 			<main class="page _container">
 				<div class="page__inner">
 					<article class="page__content">
-					<div class="page__header ">
-						<nav class="page__breadcrumbs breadcrumbs">
+						<div class="page__header ">
+							<nav class="page__breadcrumbs breadcrumbs">
 							<ul class="breadcrumbs__list">
 								<li><a href="index.html" class="breadcrumbs__link">Главная</a></li>
 								<li><a href="index.html" class="breadcrumbs__link">Мясные компании в Москве</a></li>
 								<li><span class="breadcrumbs__item">Преображенский МПК, ООО</span></li>
 							</ul>
-						</nav>
+							</nav>
 
-						<form action="#" class="page__search">
+							<form action="#" class="page__search">
 							<div class="page__search-input">
 								<input type="text" autocomplete="off" placeholder="Поиск по компаниям" name="">
 							</div>
 							<button class="page__search-btn" type="submit"></button>
-						</form>
+							</form>
 
-						<a class="page__to-catalog link link--back" href="#">
+							<a class="page__to-catalog link link--back" href="#">
 							<svg class="link__svg link__svg--back">
 								<use xlink:href="images/icons/links/links_sprite.svg#back"></use>
 							</svg>
 							<span>К каталогу компаний</span>
-						</a>
+							</a>
 
-						<h1 class="page__maker page__maker--confirmed">Преображенский МПК, ООО</h1>
-						<div class="page__header-links">
+							<h1 class="page__maker page__maker--confirmed">
+									<img class="confirmed" src="images/icons/approval.svg" alt="">
+								Преображенский МПК, ООО
+							</h1>
+							<div class="page__header-links">
 							<a class="page__header-link link link--comment" href="#">
 								<span>Оставить отзыв</span>
 								<svg class="link__svg">
@@ -46,8 +49,252 @@
 									<use xlink:href="images/icons/links/links_sprite.svg#view"></use>
 								</svg>
 							</a>
+							@@include("blocks/buttons/button.html",
+							{
+							"Text": "Работаете в этой компании?",
+							"Modifier": "button--employee",
+							"Mix-Class": "page__header-employee",
+							"Attributes": " data-text=\"Отменить запрос в сотрудники\" data-sent=\"false\" "
+							})
+							</div>
 						</div>
-					</div>
+						<div class="page__main">
+							<div class="page__left">
+								<div class="page__abs">
+									<h2 class="page__abs-title">Последние объявления сотрудников компании</h2>
+									<div class="page__abs-table">
+										<div class="page__abs-row page__abs-row--head">
+											<div class="page__abs-btn"></div>
+											<div class="page__abs-text">Объявление</div>
+											<div class="page__abs-date">Время</div>
+											<div class="page__abs-view">
+												<svg>
+													<use xlink:href="images/icons/links/links_sprite.svg#view"></use>
+												</svg>
+											</div>
+											<div class="page__abs-author">Опубликовал</div>
+										</div>
+										<div class="page__abs-row">
+											<div class="page__abs-btn">
+												@@include("blocks/buttons/button.html",
+												{
+												"Text": "Продам",
+												"Modifier": "button--buy",
+												"Mix-Class": "",
+												"Attributes": ""
+												})
+											</div>
+											<div class="page__abs-text"><a class="page__abs-link" href="#">Курица, Индейка, Говядина, Свинина от МК.</a></div>
+											<div class="page__abs-date">5 фев</div>
+											<div class="page__abs-view">155</div>
+											<div class="page__abs-author">
+												<div class="page__abs-avatar">
+													<img src="images/avatar-1.jpg" alt="">
+												</div>
+												<div class="page__abs-info">
+													<a href="" class="page__abs-name">Татьяна Лобач</a>
+													<div class="page__abs-maker">Орехово-Зуевский мясокомбинат</div>
+												</div>
+											</div>
+										</div>
+										<div class="page__abs-row">
+											<div class="page__abs-btn">
+												@@include("blocks/buttons/button.html",
+												{
+												"Text": "Продам",
+												"Modifier": "button--buy",
+												"Mix-Class": "",
+												"Attributes": ""
+												})
+											</div>
+											<div class="page__abs-text"><a class="page__abs-link" href="#">ГоленьЦБ(подл) 100р, Желудки кур.очиш 60 р.</a></div>
+											<div class="page__abs-date">27 янв</div>
+											<div class="page__abs-view">185</div>
+											<div class="page__abs-author">
+												<div class="page__abs-avatar">
+													<img src="images/avatar-1.jpg" alt="">
+												</div>
+												<div class="page__abs-info">
+													<a href="" class="page__abs-name">Татьяна Лобач</a>
+													<div class="page__abs-maker">Орехово-Зуевский мясокомбинат</div>
+												</div>
+											</div>
+										</div>
+										<div class="page__abs-row">
+											<div class="page__abs-btn">
+												@@include("blocks/buttons/button.html",
+												{
+												"Text": "Куплю",
+												"Modifier": "button--sell",
+												"Mix-Class": "",
+												"Attributes": ""
+												})
+											</div>
+											<div class="page__abs-text"><a class="page__abs-link" href="#">Курица, Индейка, Говядина, Свинина от МК.</a></div>
+											<div class="page__abs-date">21 апр</div>
+											<div class="page__abs-view">42609</div>
+											<div class="page__abs-author">
+												<div class="page__abs-avatar">
+													<img src="images/avatar-1.jpg" alt="">
+												</div>
+												<div class="page__abs-info">
+													<a href="" class="page__abs-name">Татьяна Лобач</a>
+													<div class="page__abs-maker">Орехово-Зуевский мясокомбинат</div>
+												</div>
+											</div>
+										</div>
+										<div class="page__abs-row">
+											<div class="page__abs-btn">
+												@@include("blocks/buttons/button.html",
+												{
+												"Text": "Куплю",
+												"Modifier": "button--sell",
+												"Mix-Class": "",
+												"Attributes": ""
+												})
+											</div>
+											<div class="page__abs-text"><a class="page__abs-link" href="#">Фарш куриный ММО люкс 40руб/кг.</a></div>
+											<div class="page__abs-date">5 фев</div>
+											<div class="page__abs-view">319</div>
+											<div class="page__abs-author">
+												<div class="page__abs-avatar">
+													<img src="images/avatar-2.jpg" alt="">
+												</div>
+												<div class="page__abs-info">
+													<a href="" class="page__abs-name">Виталий Пчелинцев</a>
+													<div class="page__abs-maker">ООО ОКЕАНФИШ</div>
+												</div>
+											</div>
+										</div>
+										<div class="page__abs-row">
+											<div class="page__abs-btn">
+												@@include("blocks/buttons/button.html",
+												{
+												"Text": "Продам",
+												"Modifier": "button--buy",
+												"Mix-Class": "",
+												"Attributes": ""
+												})
+											</div>
+											<div class="page__abs-text"><a class="page__abs-link" href="#">Курица, Индейка, Говядина, Свинина от МК.</a></div>
+											<div class="page__abs-date">5 фев</div>
+											<div class="page__abs-view">155</div>
+											<div class="page__abs-author">
+												<div class="page__abs-avatar">
+													<img src="images/avatar-2.jpg" alt="">
+												</div>
+												<div class="page__abs-info">
+													<a href="" class="page__abs-name">Виталий Пчелинцев</a>
+													<div class="page__abs-maker">ООО ОКЕАНФИШ</div>
+												</div>
+											</div>
+										</div>
+										<div class="page__abs-row">
+											<div class="page__abs-btn">
+												@@include("blocks/buttons/button.html",
+												{
+												"Text": "Продам",
+												"Modifier": "button--buy",
+												"Mix-Class": "",
+												"Attributes": ""
+												})
+											</div>
+											<div class="page__abs-text"><a class="page__abs-link" href="#">Желудки куриные очищенные 60 руб.</a></div>
+											<div class="page__abs-date">5 фев</div>
+											<div class="page__abs-view">155</div>
+											<div class="page__abs-author">
+												<div class="page__abs-avatar">
+													<img src="images/avatar-1.jpg" alt="">
+												</div>
+												<div class="page__abs-info">
+													<a href="" class="page__abs-name">Татьяна Лобач</a>
+													<div class="page__abs-maker">Орехово-Зуевский мясокомбинат</div>
+												</div>
+											</div>
+										</div>
+										<div class="page__abs-row">
+											<div class="page__abs-btn">
+												@@include("blocks/buttons/button.html",
+												{
+												"Text": "Продам",
+												"Modifier": "button--buy",
+												"Mix-Class": "",
+												"Attributes": ""
+												})
+											</div>
+											<div class="page__abs-text"><a class="page__abs-link" href="#">Желудки куриные очищенные 60 руб.</a></div>
+											<div class="page__abs-date">5 фев</div>
+											<div class="page__abs-view">155</div>
+											<div class="page__abs-author">
+												<div class="page__abs-avatar">
+													<img src="images/avatar-1.jpg" alt="">
+												</div>
+												<div class="page__abs-info">
+													<a href="" class="page__abs-name">Татьяна Лобач</a>
+													<div class="page__abs-maker">Орехово-Зуевский мясокомбинат</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="page__photos">
+									<div class="page__photos-title">Фото продукции</div>
+									<div class="page__photos-box">
+										<img src="images/photos/1.jpg" alt="" class="page__photo">
+										<img src="images/photos/2.jpg" alt="" class="page__photo">
+										<img src="images/photos/3.jpg" alt="" class="page__photo">
+										<img src="images/photos/4.jpg" alt="" class="page__photo">
+										<img src="images/photos/5.jpg" alt="" class="page__photo">
+										<img src="images/photos/6.jpg" alt="" class="page__photo">
+										<img src="images/photos/1.jpg" alt="" class="page__photo">
+										<img src="images/photos/4.jpg" alt="" class="page__photo">
+										<img src="images/photos/9.jpg" alt="" class="page__photo">
+										<img src="images/photos/10.jpg" alt="" class="page__photo">
+									</div>
+								</div>
+							</div>
+							<div class="page__right">
+								<div class="page__logo">
+									<img src="images/logo.png" alt="">
+								</div>
+								<div class="page__info">
+									<p><span class="page__info-title">Название компании:</span> ООО “Преображенский Мясоперерабатывающий Комбинат”</p>
+									<p><span class="page__info-title">ОГРН (ОГРНИП):</span> 1166733069612</p>
+									<p><span class="page__info-title">ИНН:</span> 6726022894</p>
+									<p><span class="page__info-title">Страна:</span> Россия</p>
+									<p><span class="page__info-title">Регион:</span> Тверская область</p>
+									<p>
+										<span class="page__info-title">Описание:</span> Преображенский МПК - современное мясоперерабатывающее предприятие в Тверской области.
+										Введен в эксплуатацию в 2013 г. Основу ассортимента составляют порционные и мелкокусковые полуфабрикаты из охлажденной
+										свинины. Продукция мясокомбината является частью вертикально-интегрированного холдинга КоПИТАНИЯФ.
+										Предприятия холдинга образуют полный цикл производства от выращивания зерна и производства комбикормов до производства
+										свежего мяса, что позволяет снизить себестоимость и гарантировать безопасность и высокое качество продукции.
+									</p>
+								
+										<span class="page__info-title">Виды деятольности:</span>
+										<ul class="page__info-list">
+											<li class="page__info-item">Оборудование, упаковка</li>
+											<li class="page__info-item">Оптовая торговля</li>
+											<li class="page__info-item">Производитель готовой продукции</li>
+											<li class="page__info-item">Производитель мясного сырья</li>
+											<li class="page__info-item">Розничная торговля</li>
+										</ul>
+									
+								
+										<span class="page__info-title">Виды продукции:</span>
+										<ul class="page__info-list">
+											<li class="page__info-item">Свинина</li>
+											<li class="page__info-item">Замороженное и охлажденное мясо</li>
+											<li class="page__info-item">Мясные полуфабрикаты</li>
+											<li class="page__info-item">Колбасы, сосиски, деликатесы</li>
+										</ul>
+									
+									<p>
+										<span class="page__info-title">Товары и услуги:</span> Мясо замороженное, мясо охлажденное, свинина, субпродукты
+									</p>
+								</div>
+							</div>
+						</div>
 					</article>
 					<aside class="page__aside">
 					<div class="page__aside-item">
