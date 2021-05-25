@@ -34,34 +34,37 @@
 
 							<h1 class="page__maker page__maker--confirmed">
 									<img class="confirmed" src="images/icons/approval.svg" alt="">
-								Преображенский МПК, ООО
+								Преображенский МПК,&nbsp;ООО
 							</h1>
 							<div class="page__header-links">
-							<a class="page__header-link link link--comment" href="#">
-								<span>Оставить отзыв</span>
-								<svg class="link__svg">
-									<use xlink:href="images/icons/links/links_sprite.svg#comment"></use>
-								</svg>
-							</a>
-							<a class="page__header-link link link--view" href="#">
-								<span>578 (+2)</span>
-								<svg class="link__svg">
-									<use xlink:href="images/icons/links/links_sprite.svg#view"></use>
-								</svg>
-							</a>
-							@@include("blocks/buttons/button.html",
-							{
-							"Text": "Работаете в этой компании?",
-							"Modifier": "button--employee",
-							"Mix-Class": "page__header-employee",
-							"Attributes": " data-text=\"Отменить запрос в сотрудники\" data-sent=\"false\" "
-							})
+								<div class="page__header-links-box">
+									<a class="page__header-link link link--comment" href="#">
+										<span>Оставить отзыв</span>
+										<svg class="link__svg">
+											<use xlink:href="images/icons/links/links_sprite.svg#comment"></use>
+										</svg>
+									</a>
+									<a class="page__header-link link link--view" href="#">
+										<span>578 (+2)</span>
+										<svg class="link__svg">
+											<use xlink:href="images/icons/links/links_sprite.svg#view"></use>
+										</svg>
+									</a>
+								</div>
+							
+								@@include("blocks/buttons/button.html",
+								{
+								"Text": "Работаете в этой компании?",
+								"Modifier": "button--employee",
+								"Mix-Class": "page__header-employee",
+								"Attributes": " data-text=\"Отменить запрос в сотрудники\" data-sent=\"false\" "
+								})
 							</div>
 						</div>
 						<div class="page__main">
 							<div class="page__left">
 								<div class="page__abs">
-									<h2 class="page__abs-title">Последние объявления сотрудников компании</h2>
+									<h2 class="page__abs-title">Последние объявления<span> сотрудников компании</span></h2>
 									<div class="page__abs-table">
 										<div class="page__abs-row page__abs-row--head">
 											<div class="page__abs-btn"></div>
@@ -240,16 +243,18 @@
 								<div class="page__photos">
 									<div class="page__photos-title">Фото продукции</div>
 									<div class="page__photos-box">
-										<img src="images/photos/1.jpg" alt="" class="page__photo">
-										<img src="images/photos/2.jpg" alt="" class="page__photo">
-										<img src="images/photos/3.jpg" alt="" class="page__photo">
-										<img src="images/photos/4.jpg" alt="" class="page__photo">
-										<img src="images/photos/5.jpg" alt="" class="page__photo">
-										<img src="images/photos/6.jpg" alt="" class="page__photo">
-										<img src="images/photos/1.jpg" alt="" class="page__photo">
-										<img src="images/photos/4.jpg" alt="" class="page__photo">
-										<img src="images/photos/9.jpg" alt="" class="page__photo">
-										<img src="images/photos/10.jpg" alt="" class="page__photo">
+										<div class="page__photos-inner">
+											<img src="images/photos/1.jpg" alt="" class="page__photo">
+											<img src="images/photos/2.jpg" alt="" class="page__photo">
+											<img src="images/photos/3.jpg" alt="" class="page__photo">
+											<img src="images/photos/4.jpg" alt="" class="page__photo">
+											<img src="images/photos/5.jpg" alt="" class="page__photo">
+											<img src="images/photos/6.jpg" alt="" class="page__photo">
+											<img src="images/photos/1.jpg" alt="" class="page__photo">
+											<img src="images/photos/4.jpg" alt="" class="page__photo">
+											<img src="images/photos/9.jpg" alt="" class="page__photo">
+											<img src="images/photos/10.jpg" alt="" class="page__photo">
+										</div>
 									</div>
 								</div>
 							</div>
